@@ -8,4 +8,9 @@ public class Car {
     public Car() {
         System.out.println("Car created");
     }
+
+
+    public void drive () {
+        System.out.println("Car drives");
+    }
 }
