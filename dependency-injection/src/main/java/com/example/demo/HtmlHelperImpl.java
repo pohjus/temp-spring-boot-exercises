@@ -18,7 +18,7 @@ public class HtmlHelperImpl implements HtmlHelper {
 
         }
 
-        htmlTable += htmlTable = "</table>";
+        htmlTable += "</table>";
         return htmlTable;
     }
 }

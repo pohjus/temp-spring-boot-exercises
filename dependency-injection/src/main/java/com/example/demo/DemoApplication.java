@@ -9,13 +9,11 @@ import org.springframework.context.ApplicationContext;
 @SpringBootApplication
 public class DemoApplication implements CommandLineRunner {
 
-
     @Autowired
     BeanLogger logger;
 
     @Autowired
     HtmlHelper htmlHelper;
-
 
 
 	public static void main(String[] args) {
