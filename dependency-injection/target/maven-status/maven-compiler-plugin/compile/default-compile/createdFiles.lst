@@ -2,4 +2,8 @@ com/example/demo/MyConf.class
 com/example/demo/DemoApplication.class
 com/example/demo/HotDog.class
 com/example/demo/SellableItem.class
+com/example/demo/HtmlHelperImpl.class
+com/example/demo/BeanLoggerImpl.class
+com/example/demo/BeanLogger.class
 com/example/demo/Car.class
+com/example/demo/HtmlHelper.class

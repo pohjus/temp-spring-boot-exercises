@@ -11,14 +11,12 @@ public class DemoApplication implements CommandLineRunner {
 
 
     @Autowired
-    ApplicationContext applicationContext;
+    BeanLogger logger;
 
     @Autowired
-    SellableItem someSellableItem;
+    HtmlHelper htmlHelper;
 
-    public DemoApplication() {
-        System.out.println("Demo app created");
-    }
+
 
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
@@ -26,11 +24,7 @@ public class DemoApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-
-        String [] names = applicationContext.getBeanDefinitionNames();
-        for(String name : names) {
-            System.out.println(name + ":\n      " + applicationContext.getBean(name).getClass().toString());
-        }
-
+        var text = htmlHelper.toHtmlTable(logger.getAllBeans());
+        System.out.println(text);
     }
 }
