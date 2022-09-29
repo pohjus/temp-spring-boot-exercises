@@ -4,23 +4,21 @@ package com.example.demo;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
-@Component
-@Primary
 public class Car implements SellableItem {
-    
 
-//    private String brand;
-//    public Car(String brand) {
-//        this.brand = brand;
-//    }
-//
+
+    private String brand;
+    public Car(String brand) {
+        this.brand = brand;
+    }
+
 
 
     public void drive () {
-        System.out.println("Car drives");
+        System.out.println(this.brand + " drives");
     }
 
     public void sell() {
-        System.out.println("Car sold");
+        System.out.println(this.brand + " sold");
     }
 }
