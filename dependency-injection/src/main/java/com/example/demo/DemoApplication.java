@@ -10,7 +10,7 @@ public class DemoApplication implements CommandLineRunner {
 
 
     @Autowired
-    Car datsun;
+    SellableItem someSellableItem;
 
     public DemoApplication() {
         System.out.println("Demo app created");
@@ -23,6 +23,6 @@ public class DemoApplication implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         System.out.println("server ready");
-        datsun.drive();
+        someSellableItem.sell();
     }
 }
